@@ -1,4 +1,4 @@
-import { MotaEventMap, MotaEventTarget } from './event';
+import { MotaEventMap, MotaEventTarget } from '../event';
 
 interface CharacterEvent {}
 

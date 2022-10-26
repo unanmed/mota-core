@@ -1,4 +1,4 @@
-import { MotaEventTarget } from './event';
+import { MotaEventTarget } from '../event';
 import { Route } from './route';
 
 /* -------------------- replay.ts -------------------- * 
