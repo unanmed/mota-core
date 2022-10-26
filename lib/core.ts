@@ -1,7 +1,13 @@
+import { MotaEventTarget } from './event';
+
 interface MotaOption {}
 
-export class Mota {
-    constructor(container: HTMLElement, option?: Partial<MotaOption>) {}
+interface MotaEvent {}
+
+export class Mota extends MotaEventTarget<MotaEvent> {
+    constructor(container: HTMLElement, option?: Partial<MotaOption>) {
+        super();
+    }
 }
 
 /**

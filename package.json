@@ -3,6 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "author": "unanmed",
+  "repository": "https://github.com/unanmed/mota-core",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/mota-core.umd.cjs",
+  "module": "./dist/mota-core.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mota-core.js",
+      "require": "./dist/mota-core.umd.js"
+    }
+  },
+  "types": "./index.d.ts",
+  "keywords": [],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

@@ -41,7 +41,7 @@ export type MotaEventList<T extends MotaEventMap> = {
 export type MotaEventOption = {};
 
 /**
- * 事件目标，K是所有的事件名称，T是名称对应的事件
+ * 事件目标，T是事件接口
  */
 export class MotaEventTarget<T extends MotaEventMap<keyof T & string>> {
     /** 所有的事件 */

@@ -10,6 +10,12 @@ export default defineConfig({
             entry: resolve(__dirname, 'lib/index.ts'),
             formats: ['es', 'umd', 'iife'],
             name: 'mota-core'
+        },
+        rollupOptions: {
+            external: [],
+            output: {
+                globals: {}
+            }
         }
     }
 });
